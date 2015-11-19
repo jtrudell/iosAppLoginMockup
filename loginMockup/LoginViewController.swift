@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-//import Alamofire
+import Alamofire
 
 class LoginViewController: UIViewController {
 
@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         let sentPassword = password.text!
         
         
-        
+//        Alamofire.request(.GET, "https://gentle-fortress-2146.herokuapp.com")
         
         //connect to server and validate
         
