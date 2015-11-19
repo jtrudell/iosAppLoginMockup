@@ -8,6 +8,8 @@
 
 import UIKit
 import  SwiftyJSON
+import Alamofire
+
 
 class RegistrationViewController: UIViewController {
 
