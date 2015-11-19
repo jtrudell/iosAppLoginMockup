@@ -110,16 +110,6 @@
                                     <rect key="frame" x="93" y="200" width="209" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register with breadCrumbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rok-Cv-73S">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="93" y="90" width="209" height="21"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-mG-Znt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -158,6 +148,16 @@
                                     <action selector="registerPressed:" destination="DOE-WD-Nob" eventType="touchUpInside" id="eMF-HL-ymy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register for breadCrumbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rok-Cv-73S">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="89" y="91" width="222" height="23"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,20 +165,20 @@
                             <mask key="subviews">
                                 <exclude reference="qnO-Pn-rjc"/>
                                 <exclude reference="Olv-Ia-xFj"/>
-                                <exclude reference="rok-Cv-73S"/>
                                 <exclude reference="fNf-mG-Znt"/>
                                 <exclude reference="2m9-6b-ITU"/>
                                 <exclude reference="bAl-2p-fnX"/>
+                                <exclude reference="rok-Cv-73S"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="qnO-Pn-rjc"/>
                                 <include reference="Olv-Ia-xFj"/>
-                                <include reference="rok-Cv-73S"/>
                                 <include reference="fNf-mG-Znt"/>
                                 <include reference="2m9-6b-ITU"/>
                                 <include reference="bAl-2p-fnX"/>
+                                <include reference="rok-Cv-73S"/>
                             </mask>
                         </variation>
                     </view>
