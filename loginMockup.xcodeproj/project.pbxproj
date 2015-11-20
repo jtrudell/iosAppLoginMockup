@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		871317351BFE6D1500B226AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871317341BFE6D1500B226AB /* LoginViewController.swift */; };
 		871317371BFE700900B226AB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871317361BFE700900B226AB /* RegistrationViewController.swift */; };
+		874DF7C21BFF9ED500731E07 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874DF7C11BFF9ED500731E07 /* UserProfileViewController.swift */; };
 		87502EA91BFE8CA30047B547 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87502EA81BFE8CA30047B547 /* SwiftyJSON.framework */; };
 		8762CBE01BFE1A9B006E60C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762CBDF1BFE1A9B006E60C1 /* AppDelegate.swift */; };
 		8762CBE21BFE1A9B006E60C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762CBE11BFE1A9B006E60C1 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		1C9FF23A5B762574C103DDA3 /* Pods-loginMockup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginMockup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loginMockup/Pods-loginMockup.debug.xcconfig"; sourceTree = "<group>"; };
 		871317341BFE6D1500B226AB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		871317361BFE700900B226AB /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		874DF7C11BFF9ED500731E07 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		87502EA81BFE8CA30047B547 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		8762CBDC1BFE1A9B006E60C1 /* loginMockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginMockup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8762CBDF1BFE1A9B006E60C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8762CBDF1BFE1A9B006E60C1 /* AppDelegate.swift */,
+				874DF7C11BFF9ED500731E07 /* UserProfileViewController.swift */,
 				8762CBE11BFE1A9B006E60C1 /* ViewController.swift */,
 				871317341BFE6D1500B226AB /* LoginViewController.swift */,
 				871317361BFE700900B226AB /* RegistrationViewController.swift */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				871317351BFE6D1500B226AB /* LoginViewController.swift in Sources */,
+				874DF7C21BFF9ED500731E07 /* UserProfileViewController.swift in Sources */,
 				8762CBE21BFE1A9B006E60C1 /* ViewController.swift in Sources */,
 				871317371BFE700900B226AB /* RegistrationViewController.swift in Sources */,
 				8762CBE01BFE1A9B006E60C1 /* AppDelegate.swift in Sources */,

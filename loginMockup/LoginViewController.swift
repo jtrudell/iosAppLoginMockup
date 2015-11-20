@@ -54,10 +54,13 @@ class LoginViewController: UIViewController {
                         let userDefaults = NSUserDefaults.standardUserDefaults()
                         userDefaults.setObject(sentUsername, forKey: "username")
                         userDefaults.setBool(true, forKey: "loggedin")
-
+                        //segues to profile page
+                        //self.performSegueWithIdentifier("toProfile", sender: self)
                     }
                 case .Failure(let error):
                     print(error)
+                    self.dismissViewControllerAnimated(true, completion: nil)
+
                 }
 
             }
@@ -65,7 +68,10 @@ class LoginViewController: UIViewController {
         }
 
         authenticateUser(loginDetails)
+        let user = NSUserDefaults.standardUserDefaults()
+        let name = user.valueForKey("username") as? String
 
+        print(name)
         // send user somewhere
 
 

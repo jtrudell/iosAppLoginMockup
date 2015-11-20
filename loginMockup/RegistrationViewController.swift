@@ -60,6 +60,11 @@ class RegistrationViewController: UIViewController {
             }
             
             registerNewUser(registrationDetails)
+            
+            // if fails do something about errors
+            // else go to login view
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
             print("got here")
         }
         
