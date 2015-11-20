@@ -13,7 +13,9 @@ import Alamofire
 
 class RegistrationViewController: UIViewController {
 
-    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     
@@ -28,7 +30,38 @@ class RegistrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // New user registration functions
     @IBAction func registerPressed(sender: UIButton) {
+        let sentFirstName = firstName.text
+        let sentLastName = lastName.text
+        let sentEmail = email.text
+        let sentPassword = password.text
+        let sentConfirmPassword = confirmPassword.text
+        
+        if sentPassword != sentConfirmPassword {
+            //send them back to register with an error about password not matching
+        } else {
+            
+            let registrationDetails : [String: Dictionary<String,String>] = [
+                "user": [
+                    "first_name": sentFirstName!,
+                    "last_name": sentLastName!,
+                    "email": sentEmail!,
+                    "password": sentPassword!
+                    ]
+                ]
+            
+            //register using Alamofire
+            
+            func registerNewUser(parameters:[String:Dictionary<String,String>]) {
+                let newUserUrl = "https://gentle-fortress-2146.herokuapp.com/users"
+                Alamofire.request(.POST, newUserUrl, parameters: parameters)
+            }
+            
+            registerNewUser(registrationDetails)
+            print("got here")
+        }
         
     }
 
