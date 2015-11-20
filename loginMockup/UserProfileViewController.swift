@@ -10,6 +10,10 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

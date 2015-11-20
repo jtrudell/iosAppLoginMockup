@@ -283,7 +283,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="submitPressed:" destination="Nch-KS-oko" eventType="touchUpInside" id="rss-rQ-nIK"/>
-                                    <segue destination="v0Q-KU-t0A" kind="show" id="h6W-g7-yrb"/>
+                                    <segue destination="v0Q-KU-t0A" kind="show" identifier="toProfile" id="h6W-g7-yrb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -326,6 +326,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kEF-7e-XV6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BfJ-Xx-wWr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbw-fg-wFN">
@@ -352,6 +353,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="vbw-fg-wFN" id="Jdo-wm-cc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12o-Ld-u5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
