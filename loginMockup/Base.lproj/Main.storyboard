@@ -283,6 +283,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="submitPressed:" destination="Nch-KS-oko" eventType="touchUpInside" id="rss-rQ-nIK"/>
+                                    <segue destination="v0Q-KU-t0A" kind="show" id="h6W-g7-yrb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -315,6 +316,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETw-E7-KoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813.5" y="-381"/>
+        </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="Xvp-1r-1gq">
+            <objects>
+                <viewController id="v0Q-KU-t0A" customClass="UserProfileViewController" customModule="loginMockup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oni-l2-1wD"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEF-7e-XV6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BfJ-Xx-wWr">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbw-fg-wFN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="191" y="169" width="20" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vbw-fg-wFN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vbw-fg-wFN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12o-Ld-u5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637" y="-172"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bcD-9f-vZU">
