@@ -26,15 +26,39 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submitPressed(sender: AnyObject) {
 
-    @IBAction func loginPressed(sender: UIButton) {
         let sentUsername = userName.text!
         let sentPassword = password.text!
         
+        let loginDetails = [
+            "email": sentUsername,
+            "password": sentPassword
+        ]
         
+        func authenticateUser(parameters:[String:String]) {
+            
+            let loginUrl = "https://gentle-fortress-2146.herokuapp.com/login"
+            
+            Alamofire.request(.POST, loginUrl, parameters: parameters).validate().responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value {
+                        let user = JSON(value)
+                        print(user)
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+    
+            }
+            
+            print("got here")
+            
+        }
         
+        authenticateUser(loginDetails)
         
-        //connect to server and validate
         
         
         
