@@ -42,14 +42,14 @@
                                     <action selector="logoutPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1w9-Mt-dGh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgE-bz-XzM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgE-bz-XzM">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="289" width="206" height="21"/>
+                                    <rect key="frame" x="58" y="289" width="287" height="62"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -110,16 +110,6 @@
                                     <rect key="frame" x="93" y="200" width="209" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register with breadCrumbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rok-Cv-73S">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="93" y="90" width="209" height="21"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-mG-Znt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -158,6 +148,16 @@
                                     <action selector="registerPressed:" destination="DOE-WD-Nob" eventType="touchUpInside" id="eMF-HL-ymy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register for breadCrumbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rok-Cv-73S">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="89" y="91" width="222" height="23"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,20 +165,20 @@
                             <mask key="subviews">
                                 <exclude reference="qnO-Pn-rjc"/>
                                 <exclude reference="Olv-Ia-xFj"/>
-                                <exclude reference="rok-Cv-73S"/>
                                 <exclude reference="fNf-mG-Znt"/>
                                 <exclude reference="2m9-6b-ITU"/>
                                 <exclude reference="bAl-2p-fnX"/>
+                                <exclude reference="rok-Cv-73S"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="qnO-Pn-rjc"/>
                                 <include reference="Olv-Ia-xFj"/>
-                                <include reference="rok-Cv-73S"/>
                                 <include reference="fNf-mG-Znt"/>
                                 <include reference="2m9-6b-ITU"/>
                                 <include reference="bAl-2p-fnX"/>
+                                <include reference="rok-Cv-73S"/>
                             </mask>
                         </variation>
                     </view>
@@ -204,21 +204,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5en-39-MdA">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="158" y="245" width="85" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="loginPressed:" destination="Nch-KS-oko" eventType="touchUpInside" id="87e-Pm-IIT"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPR-bX-dhG">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
@@ -261,25 +246,36 @@
                                     <segue destination="DOE-WD-Nob" kind="presentation" identifier="send_to_registration" id="7uc-2K-PXY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-zm-hfA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="248" width="84" height="36"/>
+                                </variation>
+                                <connections>
+                                    <action selector="submitPressed:" destination="Nch-KS-oko" eventType="touchUpInside" id="rss-rQ-nIK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="5en-39-MdA"/>
                                 <exclude reference="nPR-bX-dhG"/>
                                 <exclude reference="wtW-OC-H83"/>
                                 <exclude reference="ufG-QE-TZb"/>
                                 <exclude reference="TnP-Zw-22z"/>
+                                <exclude reference="jTC-zm-hfA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="5en-39-MdA"/>
                                 <include reference="nPR-bX-dhG"/>
                                 <include reference="wtW-OC-H83"/>
                                 <include reference="ufG-QE-TZb"/>
                                 <include reference="TnP-Zw-22z"/>
+                                <include reference="jTC-zm-hfA"/>
                             </mask>
                         </variation>
                     </view>
@@ -290,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETw-E7-KoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2013" y="-374"/>
+            <point key="canvasLocation" x="1150.5" y="-401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bcD-9f-vZU">
