@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
                     if let value = response.result.value {
                         let user = JSON(value)
                         print(user)
-
+ 
                         // set NSUserDefaults
                         let userDefaults = NSUserDefaults.standardUserDefaults()
                         userDefaults.setObject(sentUsername, forKey: "username")
