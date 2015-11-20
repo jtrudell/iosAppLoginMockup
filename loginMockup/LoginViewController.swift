@@ -26,6 +26,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // Login functions
     @IBAction func submitPressed(sender: AnyObject) {
 
         let sentUsername = userName.text!
@@ -36,6 +38,7 @@ class LoginViewController: UIViewController {
             "password": sentPassword
         ]
         
+        // Authenticate with Alamofire
         func authenticateUser(parameters:[String:String]) {
             
             let loginUrl = "https://gentle-fortress-2146.herokuapp.com/login"
@@ -46,6 +49,12 @@ class LoginViewController: UIViewController {
                     if let value = response.result.value {
                         let user = JSON(value)
                         print(user)
+                        
+                        // set NSUserDefaults
+                        let userDefaults = NSUserDefaults.standardUserDefaults()
+                        userDefaults.setObject(sentUsername, forKey: "username")
+                        userDefaults.setBool(true, forKey: "loggedin")
+                        
                     }
                 case .Failure(let error):
                     print(error)
@@ -53,20 +62,13 @@ class LoginViewController: UIViewController {
     
             }
             
-            print("got here")
-            
         }
         
         authenticateUser(loginDetails)
         
+        // send user somewhere
         
-        
-        
-        // if validated, set these ns defaults
-//        let user = NSUserDefaults.standardUserDefaults()
-//        user.setObject(sentUsername, forKey: "username")
-//        user.setBool(true, forKey: "loggedin")
-        
+
         
     }
     
