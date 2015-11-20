@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,53 +25,53 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
+
     // Login functions
     @IBAction func submitPressed(sender: AnyObject) {
 
         let sentUsername = userName.text!
         let sentPassword = password.text!
-        
+
         let loginDetails = [
             "email": sentUsername,
             "password": sentPassword
         ]
-        
+
         // Authenticate with Alamofire
         func authenticateUser(parameters:[String:String]) {
-            
+
             let loginUrl = "https://gentle-fortress-2146.herokuapp.com/login"
-            
+
             Alamofire.request(.POST, loginUrl, parameters: parameters).validate().responseJSON { response in
                 switch response.result {
                 case .Success:
                     if let value = response.result.value {
                         let user = JSON(value)
                         print(user)
-                        
+
                         // set NSUserDefaults
                         let userDefaults = NSUserDefaults.standardUserDefaults()
                         userDefaults.setObject(sentUsername, forKey: "username")
                         userDefaults.setBool(true, forKey: "loggedin")
-                        
+
                     }
                 case .Failure(let error):
                     print(error)
                 }
-    
-            }
-            
-        }
-        
-        authenticateUser(loginDetails)
-        
-        // send user somewhere
-        
 
-        
+            }
+
+        }
+
+        authenticateUser(loginDetails)
+
+        // send user somewhere
+
+
+
     }
-    
+
     /*
     // MARK: - Navigation
 
