@@ -12,12 +12,16 @@ class UserProfileViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
     
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //let email = NSUserDefaults.standardUserDefaults().valueForKey("username") as! String
+        
+        welcomeLabel.text = "hi my name is simon"
     }
 
     override func didReceiveMemoryWarning() {

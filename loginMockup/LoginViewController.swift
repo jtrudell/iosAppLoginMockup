@@ -11,6 +11,9 @@ import SwiftyJSON
 import Alamofire
 
 class LoginViewController: UIViewController {
+    
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    
 
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -51,16 +54,12 @@ class LoginViewController: UIViewController {
                         print(user)
  
                         // set NSUserDefaults
-                        let userDefaults = NSUserDefaults.standardUserDefaults()
-                        userDefaults.setObject(sentUsername, forKey: "username")
-                        userDefaults.setBool(true, forKey: "loggedin")
-                        //segues to profile page
-                        //self.performSegueWithIdentifier("toProfile", sender: self)
+                        self.userDefaults.setObject(sentUsername, forKey: "username")
+                        self.userDefaults.setObject("yes", forKey: "loggedin")
                     }
                 case .Failure(let error):
                     print(error)
-                    self.dismissViewControllerAnimated(true, completion: nil)
-
+                    self.userDefaults.setObject("no", forKey: "loggedin")
                 }
 
             }
@@ -68,11 +67,17 @@ class LoginViewController: UIViewController {
         }
 
         authenticateUser(loginDetails)
-        let user = NSUserDefaults.standardUserDefaults()
-        let name = user.valueForKey("username") as? String
+        let name = userDefaults.valueForKey("username") as? String
 
         print(name)
         // send user somewhere
+        let loggedIn = userDefaults.valueForKey("loggedin") as? String
+
+        if loggedIn == "yes" {
+            self.performSegueWithIdentifier("toProfile", sender: self)
+            
+        } 
+
 
 
 
