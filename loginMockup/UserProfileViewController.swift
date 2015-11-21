@@ -21,7 +21,8 @@ class UserProfileViewController: UIViewController {
         
         //let email = NSUserDefaults.standardUserDefaults().valueForKey("username") as! String
         
-        welcomeLabel.text = "hi my name is simon"
+        let userName = NSUserDefaults.standardUserDefaults().objectForKey("name") as! String
+        welcomeLabel.text = "hi my name \(userName)"
     }
 
     override func didReceiveMemoryWarning() {
