@@ -20,10 +20,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let loggedIn = userDefaults.valueForKey("loggedin") as? String
         
-        if loggedIn == "no" {
+        if (loggedIn == "no" || loggedIn == nil) {
             self.performSegueWithIdentifier("send_to_login", sender: self)
         } else if loggedIn == "yes" {
-            nameLabel.text = userDefaults.valueForKey("username") as! String
+            nameLabel.text = userDefaults.valueForKey("name") as! String
             self.dismissViewControllerAnimated(true, completion: nil)
         } else {
             self.performSegueWithIdentifier("send_to_login", sender: self)
@@ -50,8 +50,8 @@ class ViewController: UIViewController {
     //sends to login screen when logout pressed
     @IBAction func logoutPressed(sender: UIButton) {
         //clear NSUserDefaults
-        userDefaults.setObject("no", forKey: "loggedin")
-        userDefaults.synchronize()
+        CrumbUser.logOut()
+        
         //send back to login page
         self.performSegueWithIdentifier("send_to_login", sender: self)
     }

@@ -16,6 +16,7 @@
 		8762CBE51BFE1A9B006E60C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8762CBE31BFE1A9B006E60C1 /* Main.storyboard */; };
 		8762CBE71BFE1A9B006E60C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8762CBE61BFE1A9B006E60C1 /* Assets.xcassets */; };
 		8762CBEA1BFE1A9B006E60C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8762CBE81BFE1A9B006E60C1 /* LaunchScreen.storyboard */; };
+		879D9BF01C0126DC0014311A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D9BEF1C0126DC0014311A /* UserModel.swift */; };
 		D2E914F74DC750B5697BAD69 /* Pods_loginMockup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0665C197A4BCFD1ACD12DA7D /* Pods_loginMockup.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		8762CBE61BFE1A9B006E60C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8762CBE91BFE1A9B006E60C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8762CBEB1BFE1A9B006E60C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879D9BEF1C0126DC0014311A /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8762CBDF1BFE1A9B006E60C1 /* AppDelegate.swift */,
+				879D9BEF1C0126DC0014311A /* UserModel.swift */,
 				874DF7C11BFF9ED500731E07 /* UserProfileViewController.swift */,
 				8762CBE11BFE1A9B006E60C1 /* ViewController.swift */,
 				871317341BFE6D1500B226AB /* LoginViewController.swift */,
@@ -242,6 +245,7 @@
 				874DF7C21BFF9ED500731E07 /* UserProfileViewController.swift in Sources */,
 				8762CBE21BFE1A9B006E60C1 /* ViewController.swift in Sources */,
 				871317371BFE700900B226AB /* RegistrationViewController.swift in Sources */,
+				879D9BF01C0126DC0014311A /* UserModel.swift in Sources */,
 				8762CBE01BFE1A9B006E60C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

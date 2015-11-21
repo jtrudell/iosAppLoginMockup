@@ -12,8 +12,6 @@ import Alamofire
 
 class LoginViewController: UIViewController {
     
-    let userDefaults = NSUserDefaults.standardUserDefaults()
-    
 
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -54,12 +52,13 @@ class LoginViewController: UIViewController {
                         print(user)
  
                         // set NSUserDefaults
-                        self.userDefaults.setObject(sentUsername, forKey: "username")
-                        self.userDefaults.setObject("yes", forKey: "loggedin")
+                        let sessionUser = CrumbUser(firstName: "jane", lastName: "smith", email: sentUsername)
+                        sessionUser.setUserDefaults()
+                        
                     }
                 case .Failure(let error):
                     print(error)
-                    self.userDefaults.setObject("no", forKey: "loggedin")
+                    NSUserDefaults.standardUserDefaults().setObject("no", forKey: "loggedin")
                 }
 
             }
@@ -67,17 +66,10 @@ class LoginViewController: UIViewController {
         }
 
         authenticateUser(loginDetails)
-        let name = userDefaults.valueForKey("username") as? String
 
-        print(name)
         // send user somewhere
-        let loggedIn = userDefaults.valueForKey("loggedin") as? String
 
-        if loggedIn == "yes" {
-            self.performSegueWithIdentifier("toProfile", sender: self)
-            
-        } 
-
+       
 
 
 
